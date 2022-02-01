@@ -1,0 +1,40 @@
+{
+  "name": "aiida-seigrowth",
+  "version": "0.0.2",
+  "description": "AiiDA plugin to model SEI growth by population balance modeling",
+  "url": "https://github.com/lucabanetta/aiida-plugin-cutter",
+  "author": "Luca Banetta",
+  "author_email": "luca.banetta@polito.it",
+  "license": "MIT license",
+  "classifiers": [
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Scientific/Engineering :: Chemical Engineering",
+    "Topic :: Scientific/Engineering :: Lithium ion batteries",
+    "Framework :: AiiDA"
+  		 ],
+  "python_requires": ">=3.8",
+  "install_requires": [
+    			"aiida-core>=1.4.0,<2.0.0",
+    			"importlib_resources",
+    			"jsonschema ~=3.0",
+    			"numpy",
+    			"packaging",
+    			"python-dateutil~=2.8",
+   			"pybamm == 21.12"
+  		      ],
+  "reentry_register": true,
+  "include_package_data": true,
+  "entry_points": {
+    "aiida.calculations": ["seigrowth.pbe = aiida_seigrowth.calculations:PbeSeiCalculation"]
+ 		   },
+  "extras_require": {
+    		         "code_style": [
+      		         "pre-commit~=2.6"
+    ],
+    "docs": [
+      "myst-parser~=0.15.0",
+      "sphinx-external-toc",
+      "furo"
+    ]
+  }
+}
