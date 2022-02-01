@@ -1,0 +1,3 @@
+[aiida.calculations]
+seigrowth.pbe = aiida_seigrowth.calculations:PbeSeiCalculation
+

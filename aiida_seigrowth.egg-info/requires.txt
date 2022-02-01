@@ -1,0 +1,15 @@
+aiida-core<2.0.0,>=1.4.0
+importlib_resources
+jsonschema~=3.0
+numpy
+packaging
+python-dateutil~=2.8
+pybamm==21.12
+
+[code_style]
+pre-commit~=2.6
+
+[docs]
+myst-parser~=0.15.0
+sphinx-external-toc
+furo

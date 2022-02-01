@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+aiida_seigrowth/__init__.py
+aiida_seigrowth/calculations.py
+aiida_seigrowth.egg-info/PKG-INFO
+aiida_seigrowth.egg-info/SOURCES.txt
+aiida_seigrowth.egg-info/dependency_links.txt
+aiida_seigrowth.egg-info/entry_points.txt
+aiida_seigrowth.egg-info/requires.txt
+aiida_seigrowth.egg-info/top_level.txt
