@@ -28,7 +28,7 @@
 
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version
  
- * Download the External Code folder and include the python script pb.py by modifying the "remote_abs_path" option in code.yml accordingly:
+ * Download the External Code folder and include the python script pb.py by modifying the "remote_abs_path" option in code.yml by inserting the absolute path to the script pb.py:
 
  * Include the code by using
 ```
