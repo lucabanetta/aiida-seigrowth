@@ -1,0 +1,9 @@
+---
+label: "seigrowthPBM"
+description:  "python script which models SEI growth by population balance modeling."
+input_plugin: "seigrowth.pbe"
+on_computer: true
+remote_abs_path: "/absolute/path/to/ExternalCode/pb.py"
+computer: "localhost"
+prepend_text: " "
+append_text: " "
