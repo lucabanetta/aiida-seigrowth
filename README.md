@@ -28,10 +28,7 @@
 
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version
  
- * Download the External Code folder and include the python script pb.py by modifying the script code.yml accordingly:
-```
-
-```
+ * Download the External Code folder and include the python script pb.py by modifying the "remote_abs_path" option in code.yml accordingly:
 
  * Include the code by using
 ```
@@ -39,7 +36,7 @@ verdi code setup --config code.yml
 ```
 
  * Proceed to install the plugin 
-```shell
+```
 pip install aiida-seigrowth
 verdi quicksetup  # better to set up a new profile
 verdi plugin list aiida.calculations  # should now show your calclulation plugins
@@ -58,8 +55,8 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```shell
 verdi daemon start     # make sure the daemon is running
 cd examples
-./example_01.py        # run test calculation
-verdi process list -a  # check record of calculation
+verdi run launch.py        # run test calculation
+verdi process list -a      # check record of calculation
 ```
 
 ## License
