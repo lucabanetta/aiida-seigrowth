@@ -10,7 +10,7 @@ import os
 import scipy
 
 ###################### Load solution data of a charging cycle from Pybamm ###################### 
-solfil='/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/InputData/Trajectory.pkl'
+solfil = "Trajectory.pkl"
 sim=pybamm.load(solfil)
 eta_sei=sim.solution["SEI film overpotential [V]"].entries
 neg_electrolyte_pot=sim.solution["Negative electrolyte potential [V]"].entries
@@ -22,7 +22,7 @@ time_P2D=sim.solution["Time [h]"].entries ; time = time_P2D*3600
 				
 ###################Set input parameters from file parameters.dat ########################################
 parameters = {}	
-with open("/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/InputData/parameters.dat") as inputParameters:
+with open("parameters.txt") as inputParameters:
 	for line in inputParameters:
 		par, value = line.partition("=")[::2]
 		parameters[par.strip()] = float(value)
@@ -42,14 +42,15 @@ i0      = parameters['i0']
 ncycles = int(parameters['ncycles'])
 
 nclass = -1 # remove the title from the evaluation of nclass
+
+os.mkdir("Distributions")
+os.mkdir("Outputs")
 for ilayer in range(nlayer):
-    with open('/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/InputData/InitialSEIDistribution.dat','r') as firstfile, open('/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/Distributions/fildistr'+str(ilayer)+'_0.dat','w') as secondfile:
+    with open('InitialSEIDistribution.txt','r') as firstfile, open('Distributions/fildistr'+str(ilayer)+'_0.dat','w') as secondfile:
         for line in firstfile:
             secondfile.write(line)
             if ilayer == 1:
             	nclass += 1       
-            	   	
-print(nclass)           
 
 for a in range(1, ncycles):
 #################### Initialize array to store sei thickness data ##############################
@@ -58,7 +59,8 @@ for a in range(1, ncycles):
 ################################################################################################
 
 ################### Create file for reporting results ##########################################
-	resfile='/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/Outputs/result_pb'+str(a)+'.dat'
+
+	resfile='Outputs/result_pb'+str(a)+'.dat'
 	final_output = open(resfile, "w")
 	final_output.write('x coord [m]   mean SEI prv[m]    mean SEI [m]\n')
 ################################################################################################
@@ -73,7 +75,7 @@ for a in range(1, ncycles):
 
 ################## Read initial (or temporary SEI distribution) ################################
 	for ilayer in range(nlayer):  ##ilayer: counter referred to the location expressed as distance from anodic current collector
-		infil='/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/Distributions/fildistr'+str(ilayer)+'_'+str(a-1)+'.dat'
+		infil='Distributions/fildistr'+str(ilayer)+'_'+str(a-1)+'.dat'
 		SEI_thickness=np.zeros(nclass)
 		thickness_number_fraction=np.zeros(nclass)
 		overpot=np.zeros(shape=(nclass,len(time)))
@@ -157,7 +159,7 @@ for a in range(1, ncycles):
 	################################################################################################
 	##updates the SEI distribution at location X
 		time_index=-1
-		outfil='/home/lbanetta/Desktop/BIGMAP/AiiDa/PBE_Plugin/V0.0.2_Test/Distributions/fildistr'+str(ilayer)+'_'+str(a)+'.dat'
+		outfil='Distributions/fildistr'+str(ilayer)+'_'+str(a)+'.dat'
 		file2 = open(outfil, "w")
 		file2.write('SEI [m]   frc [-]   \n')
 		for iclasse in range(nclass):
