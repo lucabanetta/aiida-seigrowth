@@ -1,11 +1,11 @@
 """
 Calculations provided by aiida_seigrowth.
 
-Register calculations via the "aiida.calculations" entry point in setup.json.
+Register calculations via the "aiida.calculations" entry point in setup.py.
 """
-from aiida.common import datastructures
+from aiida.common.datastructures import CalcInfo, CodeInfo
 from aiida.engine import CalcJob
-from aiida.orm import SinglefileData,Dict,Int
+from aiida.orm import SinglefileData, Str, FolderData
 
 
 class PbeSeiCalculation(CalcJob):
@@ -18,24 +18,31 @@ class PbeSeiCalculation(CalcJob):
     @classmethod
     def define(cls, spec):
     	super().define(spec)
+    	
     	spec.input("parameters", valid_type=SinglefileData, help="Parametri chimico/fisici per la crescita del SEI")
-    	spec.input("nlayers", valid_type =Int, help = "numero di coordinate anodiche" )
     	spec.input("InitialSeiDistribution", valid_type=SinglefileData, help ="Distribuzione iniziale del SEI")
-    	spec.input("PybammData", valid_type = SinglefileData, help = "FIle .pkl prodotto dalla simulazione pybamm")
-    	# spec.inputs['metadata']['options']['parser_name'].default = 'seigrowth.pbe'
+    	spec.input("PybammData", valid_type = SinglefileData, help = "File .pkl prodotto dalla simulazione pybamm")
+    	
+    	spec.output("Distributions", valid_type = FolderData, help = 'Distribuzione del SEI ad ogni coordinata ')
+    	spec.output("Outputs", valid_type = FolderData, help = "Valori medi del SEI ad ogni timestep e ad ogni coordinata anodica")
+    	
     	spec.inputs['metadata']['options']['resources'].default = {'num_machines': 1, 'num_mpiprocs_per_machine': 1}
 
-    def prepare_for_submission(self, folder):
-    
-    # prepare the file distributions fildistr<ilayer>_0.dat from InitialSEIDistribution.dat in the folder Distributions
-        for ilayer in range(self.inputs.nlayers.value):
-            with open('InputData/InitialSEIDistribution.dat','r') as firstfile, open('Distributions/fildistr'+str(ilayer)+'_0.dat','w') as secondfile:
-                for line in firstfile:
-                    secondfile.write(line)
+    def prepare_for_submission(self, folder) -> CalcInfo:
 				
-        codeinfo = datastructures.CodeInfo()
+        codeinfo = CodeInfo()
         codeinfo.code_uuid = self.inputs.code.uuid
-
-        calcinfo = datastructures.CalcInfo()
+        
+        calcinfo = CalcInfo()
+        
+        calcinfo.local_copy_list = [(self.inputs.parameters.uuid, self.inputs.parameters.filename, 'parameters.txt'),
+                                    (self.inputs.InitialSeiDistribution.uuid, self.inputs.InitialSeiDistribution.filename, 'InitialSEIDistribution.txt'), 
+                                    (self.inputs.PybammData.uuid, self.inputs.PybammData.filename, 'Trajectory.pkl')
+                                   ]
+        
+        calcinfo.retrieve_list = ['Distributions',
+                                  'Outputs'
+                                 ]
+                
         calcinfo.codes_info = [codeinfo]
         return calcinfo

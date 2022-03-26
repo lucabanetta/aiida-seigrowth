@@ -28,7 +28,19 @@
 
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version
  
- * Download the External Code folder and include the python script pb.py by modifying the "remote_abs_path" option in code.yml by inserting the absolute path to the script pb.py:
+ * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
+```
+---
+label: "seigrowthPBM"
+description:  "python script which models SEI growth by population balance modeling."
+input_plugin: "seigrowth.pbe"
+on_computer: true
+remote_abs_path: "/absolute/path/to/pb.py"
+computer: "<yourcomputer>"
+prepend_text: " "
+append_text: " "
+
+```
 
  * Include the code by using
 ```
@@ -36,10 +48,10 @@ verdi code setup --config code.yml
 ```
 
  * Proceed to install the plugin 
-```
-pip install aiida-seigrowth
-verdi quicksetup  # better to set up a new profile
-verdi plugin list aiida.calculations  # should now show your calclulation plugins
+```shell
+pip install aiida-seigrowth==0.1.0
+reentry scan
+verdi plugin list aiida.calculations  # should now show seigrowth.pbe under the list of aiida.calculations
 ```
 ## Usage
 
@@ -53,10 +65,9 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
 * Proceed to launch the example
 ```shell
-verdi daemon start     # make sure the daemon is running
 cd examples
-verdi run launch.py        # run test calculation
-verdi process list -a      # check record of calculation
+verdi run launch.py
+verdi process list -a  # check record of calculation
 ```
 
 ## License
