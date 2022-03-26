@@ -5,7 +5,15 @@
 
 # aiida-seigrowth
 
- A plugin to Python3.8 to model SEI growth
+ A plugin to a python script which describes the growth of the Solid Electrolyte Interface o a polydisperse graphitic electrode by using population balance modeling.
+ As input data, it receives:
+* ['Trajectory.pkl']: trajectory file obtained from p2d simulations conducted by using pybamm;
+* ['Initial SEI Distribution']: an initial SEI thickness distribution for all the anodid coordinates;
+* ['Parameters']: crucial phyisicochemical parameters;
+ 
+ It provides with two categories of results
+* ['Distributions']: it contains a series of files filedistr_j_k, which represent the SEI thickness distribution at the j-th location at time k
+* ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
 
 ## Repository contents
 
