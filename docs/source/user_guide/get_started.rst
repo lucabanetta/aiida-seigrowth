@@ -24,6 +24,9 @@ Setup the external code *pb.py*
 		.. code-block:: console 
 		
 		verdi code setup --config code.yml
+Setup PyBAMM
+++++++++++++++++++++++++
+	
 
 Installation
 ++++++++++++
