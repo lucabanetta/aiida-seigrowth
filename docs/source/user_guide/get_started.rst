@@ -30,10 +30,7 @@ Setup PyBAMM
 
 Installation
 ++++++++++++
-
-Use the following commands to install the plugin:
-	.. code-block:: console
-	
+.. code-block:: console
  	$ Database engine: postgresql_psycopg2
    	$ Database host: localhost
    	$ Database port: 5432
