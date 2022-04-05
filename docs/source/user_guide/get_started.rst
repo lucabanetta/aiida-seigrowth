@@ -8,7 +8,8 @@ a short example on how to use the plugin.
 Setup the external code *pb.py*
 ++++++++++++++++++++++++
 Follow the commands:
-Download the *ExternalCode* folder and load *pb.py* by modifying the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
+Download the *ExternalCode* folder
+Load *pb.py* by modifying the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
 ```
 ---
 label: "seigrowthPBM"
