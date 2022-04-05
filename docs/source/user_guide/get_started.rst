@@ -28,7 +28,7 @@ Installation
 ++++++++++++
 
 Use the following commands to install the plugin:
-
+	.. code-block:: console
 	pip install aiida-seigrowth==0.1.0
     	verdi quicksetup  # better to set up a new profile
     	reentry scan
