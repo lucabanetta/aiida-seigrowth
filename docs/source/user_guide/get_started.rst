@@ -6,22 +6,21 @@ This page contains a short guide on the installation procedures of the external 
 
 Setup the external code *pb.py*
 ++++++++++++++++++++++++
-	- Download the *ExternalCode* folder.
+    - Download the *ExternalCode* folder.
 
-	- Load *pb.py* by modifying the entries of the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
+    - Load *pb.py* by modifying the entries of the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
 
-		1) label: "seigrowthPBM"
-		2) description:  "python script which models SEI growth by population balance modeling."
-		3) input_plugin: "seigrowth.pbe"
-		4) on_computer: true
-		5) remote_abs_path: "/absolute/path/to/pb.py"
-		6) computer: "<yourcomputer>"
-		7) prepend_text: " "
-		8) append_text: " "
-
-	- Include the code: 
-	  .. code-block:: console 
-	verdi code setup --config code.yml
+        1) label: "seigrowthPBM"
+	2) description:  "python script which models SEI growth by population balance modeling."
+	3) input_plugin: "seigrowth.pbe"
+	4) on_computer: true
+	5) remote_abs_path: "/absolute/path/to/pb.py"
+	6) computer: "<yourcomputer>"
+	7) prepend_text: " "
+	8) append_text: " "
+    - Include the code: 
+        .. code-block:: console 
+	    verdi code setup --config code.yml
 	
 Setup PyBAMM
 ++++++++++++++++++++++++
