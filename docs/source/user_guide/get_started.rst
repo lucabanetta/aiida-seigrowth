@@ -23,12 +23,14 @@ Setup the external code *pb.py*
 	- Include the code: 
 	  .. code-block:: console 
 	verdi code setup --config code.yml
+	
 Setup PyBAMM
 ++++++++++++++++++++++++
 	- Install PyBAMM in developer mode by following the instructions at `PyBAMM_Install <https://pybamm.readthedocs.io/en/latest/install/install-from-source.html>`_
 
 Installation
 ++++++++++++
+Quick installation guide for the plugin::
   pip install aiida-seigrowth==0.1.0
   verdi quicksetup  # better to set up a new profile
   reentry scan
