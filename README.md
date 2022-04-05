@@ -5,7 +5,7 @@
 
 # aiida-seigrowth
 
- A plugin to a python script which describes the growth of the Solid Electrolyte Interface o a polydisperse graphitic electrode by using population balance modeling.
+ A plugin to a python script which describes the growth of the Solid Electrolyte Interface on a graphitic electrode across a series of charges by using population balance modeling coupled with input data computed by a Pseudo 2-Dimensional (P2D) model.
  As input data, it receives:
 * ['Trajectory.pkl']: trajectory file obtained from p2d simulations conducted by using pybamm;
 * ['Initial SEI Distribution']: an initial SEI thickness distribution for all the anodid coordinates;
