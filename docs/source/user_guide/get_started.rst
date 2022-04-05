@@ -22,6 +22,7 @@ Setup the external code *pb.py*
 
 	- Include the code: 
 		.. code-block:: console 
+		
 		verdi code setup --config code.yml
 
 Installation
@@ -29,6 +30,7 @@ Installation
 
 Use the following commands to install the plugin:
 	.. code-block:: console
+	
  	$ Database engine: postgresql_psycopg2
    	$ Database host: localhost
    	$ Database port: 5432
