@@ -44,11 +44,9 @@ verdi calculation plugins  # should now show your calclulation plugins
 
 Usage
 +++++
-
-A quick demo of how to submit a calculation:
 .. cd examples
-    verdi run launch.py        # submit test calculation
-    verdi calculation list -a  # check status of calculation
+	verdi run launch.py        # submit test calculation
+	verdi calculation list -a  # check status of calculation
 
 Available calculations
 ++++++++++++++++++++++
