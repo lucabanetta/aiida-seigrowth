@@ -28,10 +28,10 @@ Installation
 
 Use the following commands to install the plugin:
 
-    1)pip install aiida-seigrowth==0.1.0
-    2)verdi quicksetup  # better to set up a new profile
-    3)reentry scan
-    4) verdi calculation plugins  # should now show your calclulation plugins
+	pip install aiida-seigrowth==0.1.0
+    	verdi quicksetup  # better to set up a new profile
+    	reentry scan
+	verdi calculation plugins  # should now show your calclulation plugins
 
 Usage
 +++++
