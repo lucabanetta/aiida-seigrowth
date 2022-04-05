@@ -21,7 +21,7 @@ Setup the external code *pb.py*
 		8) append_text: " "
 
 	- Include the code: 
-	.. code-block:: console 
+		.. code-block:: console 
 		verdi code setup --config code.yml
 
 Installation
