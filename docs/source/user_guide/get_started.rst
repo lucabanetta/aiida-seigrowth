@@ -30,13 +30,6 @@ Setup PyBAMM
 
 Installation
 ++++++++++++
-.. code-block:: console
-$ Database engine: postgresql_psycopg2
-$ Database host: localhost
-$ Database port: 5432
-$ AiiDA Database name: aiidadb
-$ AiiDA Database user: aiida
-$ AiiDA Database password: <password>
 pip install aiida-seigrowth==0.1.0
 verdi quicksetup  # better to set up a new profile
 reentry scan
