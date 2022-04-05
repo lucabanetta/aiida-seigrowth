@@ -26,7 +26,7 @@ Setup the external code *pb.py*
 		verdi code setup --config code.yml
 Setup PyBAMM
 ++++++++++++++++++++++++
-	- Install PyBAMM in developer mode by following the instructions at `CNN <http://cnn.com>`_
+	- Install PyBAMM in developer mode by following the instructions at `PyBAMM_Install <https://pybamm.readthedocs.io/en/latest/install/install-from-source.html>`_
 
 Installation
 ++++++++++++
