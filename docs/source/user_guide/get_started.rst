@@ -28,7 +28,7 @@ Setup PyBAMM
 
 Installation
 ++++++++++++
-Quick installation guide for the plugin::
+Quick installation guide for the plugin. Please use the following command lines:
     1) pip install aiida-seigrowth==0.1.0
     2) verdi quicksetup  # better to set up a new profile
     3) reentry scan
