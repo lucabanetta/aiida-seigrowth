@@ -2,8 +2,7 @@
 Getting started
 ===============
 
-This page should contain a short guide on what the plugin does and
-a short example on how to use the plugin.
+This page contains a short guide on the installation procedures of the external code and the plugin, together with the necessary information to install PyBAMM. FInally, there is a short example on how to use the plugin.
 
 Setup the external code *pb.py*
 ++++++++++++++++++++++++
