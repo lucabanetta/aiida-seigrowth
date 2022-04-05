@@ -11,7 +11,7 @@ Follow the instructions:
     Download the *ExternalCode* folder
     Load *pb.py* by modifying the provided *code.yml*:
         ```
-        label: "seigrowthPBM"
+        label: "seigrowthPBM" \\
         description:  "python script which models SEI growth by population balance modeling."
         input_plugin: "seigrowth.pbe"
         on_computer: true
