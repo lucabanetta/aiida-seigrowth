@@ -11,14 +11,14 @@ Follow the instructions:
     Download the *ExternalCode* folder
     Load *pb.py* by modifying the provided *code.yml*:
         ```
-        label: "seigrowthPBM" \\
-        description:  "python script which models SEI growth by population balance modeling."
-        input_plugin: "seigrowth.pbe"
-        on_computer: true
-        remote_abs_path: "/absolute/path/to/pb.py"
-        computer: "<yourcomputer>"
-        prepend_text: " "
-        append_text: " "
+        |label: "seigrowthPBM"
+        |description:  "python script which models SEI growth by population balance modeling."
+        |input_plugin: "seigrowth.pbe"
+        |on_computer: true
+        |remote_abs_path: "/absolute/path/to/pb.py"
+        |computer: "<yourcomputer>"
+        |prepend_text: " "
+        |append_text: " "
         ```
     Include the code by using
     ```
