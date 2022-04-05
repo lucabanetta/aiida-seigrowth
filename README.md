@@ -22,7 +22,6 @@
   * [`publish-on-pypi.yml`](.github/workflows/publish-on-pypi.yml): automatically deploy git tags to PyPI - just generate a [PyPI API token](https://pypi.org/help/#apitoken) for your PyPI account and add it to the `pypi_token` secret of your github repository
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
-* [`docs/`](docs/): A documentation template ready for publication on [Read the Docs](http://aiida-diff.readthedocs.io/en/latest/)
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
 * [`.gitignore`](.gitignore): Telling git which files to ignore
 * [`.pre-commit-config.yaml`](.pre-commit-config.yaml): Configuration of [pre-commit hooks](https://pre-commit.com/) that sanitize coding style and check for syntax errors. Enable via `pip install -e .[pre-commit] && pre-commit install`
@@ -36,7 +35,7 @@
 
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following link:
 ```
-https://pybamm.readthedocs.io/en/latest/install/install-from-source.html#
+https://pybamm.readthedocs.io/en/latest/install/install-from-source.html
 ```
  * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
 ```
@@ -58,7 +57,7 @@ verdi code setup --config code.yml
 ```
 
  * Proceed to install the plugin 
-```shell
+```
 pip install aiida-seigrowth==0.1.0
 reentry scan
 verdi plugin list aiida.calculations  # should now show seigrowth.pbe under the list of aiida.calculations
@@ -67,12 +66,16 @@ verdi plugin list aiida.calculations  # should now show seigrowth.pbe under the 
 
 Here goes a complete example of how to submit a test calculation using this plugin.
 
-A quick demo of how to submit a calculation:
+To submit a calculation:
 
 * Activate the pybamm environment 
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
+* Prepare a PyBamm simulation 
+
+* Entering the Examples folder in aiida-seigrowth, there is a subfolder named InputData with the input parameters necessary to launch the test and a script named launch.py
+s
 * Proceed to launch the example
 ```shell
 cd examples
