@@ -21,19 +21,18 @@ Setup the external code *pb.py*
 		8) append_text: " "
 
 	- Include the code: 
-		.. code-block:: console 
-		
-		verdi code setup --config code.yml
+	  .. code-block:: console 
+	verdi code setup --config code.yml
 Setup PyBAMM
 ++++++++++++++++++++++++
 	- Install PyBAMM in developer mode by following the instructions at `PyBAMM_Install <https://pybamm.readthedocs.io/en/latest/install/install-from-source.html>`_
 
 Installation
 ++++++++++++
-pip install aiida-seigrowth==0.1.0
-verdi quicksetup  # better to set up a new profile
-reentry scan
-verdi calculation plugins  # should now show your calclulation plugins
+    pip install aiida-seigrowth==0.1.0
+    verdi quicksetup  # better to set up a new profile
+    reentry scan
+    verdi calculation plugins  # should now show your calclulation plugins
 
 Usage
 +++++
