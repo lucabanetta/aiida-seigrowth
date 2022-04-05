@@ -19,10 +19,10 @@ Follow the instructions:
         prepend_text: " "
         append_text: " "
 
-Include the code by using
-```
-verdi code setup --config code.yml
-```
+    Include the code by using
+    ```
+    verdi code setup --config code.yml
+    ```
 
 Installation
 ++++++++++++
