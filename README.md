@@ -8,9 +8,9 @@
  A plugin to a python script which describes the growth of the Solid Electrolyte Interface on a graphitic electrode across a series of charges by using population balance modeling coupled with input data computed by a Pseudo 2-Dimensional (P2D) model.
  As input data, it receives:
 * ['Trajectory.pkl']: trajectory file obtained from p2d simulations conducted by using pybamm;
-* ['Initial SEI Distribution']: an initial SEI thickness distribution for all the anodid coordinates;
-* ['Parameters']: crucial phyisicochemical parameters;
- 
+* ['Initial SEI Distribution']: an initial SEI thickness distribution for all the considered anodic coordinates;
+* ['Parameters']: it contains the overall number of cycles and the kinetic features of the SEI growth.
+*  
  It provides with two categories of results
 * ['Distributions']: it contains a series of files filedistr_j_k, which represent the SEI thickness distribution at the j-th location at time k
 * ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
