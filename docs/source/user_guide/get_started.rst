@@ -36,9 +36,9 @@ Quick installation guide for the plugin. Please use the following command lines:
 
 Usage
 +++++
-.. cd examples
-	verdi run launch.py        # submit test calculation
-	verdi calculation list -a  # check status of calculation
+    1) cd examples
+    2) verdi run launch.py        # submit test calculation
+    3) verdi calculation list -a  # check status of calculation
 
 Available calculations
 ++++++++++++++++++++++
