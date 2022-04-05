@@ -9,7 +9,7 @@ Setup the external code *pb.py*
 ++++++++++++++++++++++++
 	- Download the *ExternalCode* folder.
 
-	- Load *pb.py* by modifying the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
+	- Load *pb.py* by modifying the entries of the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
 
 		1) label: "seigrowthPBM"
 		2) description:  "python script which models SEI growth by population balance modeling."
