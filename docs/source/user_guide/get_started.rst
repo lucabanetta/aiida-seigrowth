@@ -29,10 +29,10 @@ Setup PyBAMM
 Installation
 ++++++++++++
 Quick installation guide for the plugin::
-  pip install aiida-seigrowth==0.1.0
-  verdi quicksetup  # better to set up a new profile
-  reentry scan
-  verdi calculation plugins  # should now show your calclulation plugins
+    pip install aiida-seigrowth==0.1.0
+    verdi quicksetup  # better to set up a new profile
+    reentry scan
+    verdi calculation plugins  # should now show your calclulation plugins
 
 Usage
 +++++
