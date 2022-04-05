@@ -7,23 +7,22 @@ a short example on how to use the plugin.
 
 Setup the external code *pb.py*
 ++++++++++++++++++++++++
-Follow the instructions:
-    Download the *ExternalCode* folder
-    Load *pb.py* by modifying the provided *code.yml*:
-        ```
-        |label: "seigrowthPBM"
-        |description:  "python script which models SEI growth by population balance modeling."
-        |input_plugin: "seigrowth.pbe"
-        |on_computer: true
-        |remote_abs_path: "/absolute/path/to/pb.py"
-        |computer: "<yourcomputer>"
-        |prepend_text: " "
-        |append_text: " "
-        ```
-    Include the code by using
-    ```
-    verdi code setup --config code.yml
-    ```
+	- Download the *ExternalCode* folder.
+
+	- Load *pb.py* by modifying the provided *code.yml* by inserting the absolute path to *pb.py* and the name of the computer platform:
+		* label: "seigrowthPBM"
+	        * description:  "python script which models SEI growth by population balance modeling."
+	        * input_plugin: "seigrowth.pbe"
+		* on_computer: true
+		* remote_abs_path: "/absolute/path/to/pb.py"
+		* computer: "<yourcomputer>"
+		* prepend_text: " "
+		* append_text: " "
+
+	- Include the code: 
+	```
+	verdi code setup --config code.yml
+	```
 
 Installation
 ++++++++++++
