@@ -34,8 +34,10 @@
 
 ## Installation
 
- * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version
- 
+ * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following link:
+```
+https://pybamm.readthedocs.io/en/latest/install/install-from-source.html#
+```
  * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
 ```
 ---
@@ -76,6 +78,7 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 cd examples
 verdi run launch.py
 verdi process list -a  # check record of calculation
+check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
 ```
 
 ## License
