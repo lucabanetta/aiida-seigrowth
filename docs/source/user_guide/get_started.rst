@@ -21,14 +21,14 @@ Setup the external code *pb.py*
 		8) append_text: " "
 
 	- Include the code: 
-.. code-block:: console 
+	.. code-block:: console 
 		verdi code setup --config code.yml
 
 Installation
 ++++++++++++
 
 Use the following commands to install the plugin:
-.. code-block:: console
+	.. code-block:: console
  	$ Database engine: postgresql_psycopg2
    	$ Database host: localhost
    	$ Database port: 5432
