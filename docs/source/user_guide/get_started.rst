@@ -19,7 +19,7 @@ Setup the external code *pb.py*
 	7) prepend_text: " "
 	8) append_text: " "
     - Include the code: 
-        .. code-block:: console 
+            .. code-block:: console 
 	    verdi code setup --config code.yml
 	
 Setup PyBAMM
