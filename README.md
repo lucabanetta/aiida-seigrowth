@@ -69,10 +69,14 @@ To submit a calculation:
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
-* Prepare a PyBamm simulation by using the script examples/
+* Prepare a Pybamm simulation
+```shell
+cd examples/Pybamm_Simulations
+python Pybamm_Use_Example.py
+```
 
 * Entering the Examples folder in aiida-seigrowth, there is a subfolder named InputData with the necessary inputs and a script named launch.py
-s
+
 * Proceed to launch the example
 ```shell
 cd examples
