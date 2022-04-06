@@ -27,7 +27,7 @@ The external code receives as inputs:
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
 * [`conftest.py`](conftest.py): Configuration of fixtures for [pytest](https://docs.pytest.org/en/latest/)
-* [`pyproject.toml`](pyproject.toml): Python package metadata for registration on [PyPI](https://pypi.org/) and the [AiiDA plugin registry](https://aiidateam.github.io/aiida-registry/) (including entry points)
+* [`pyproject.toml`](pyproject.toml): Minimum requirements for the build system to execute
 * [`setup.py`](setup.py): Configuration to install the package aiida-seigrowth
 
 ## Installation
