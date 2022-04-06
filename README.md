@@ -31,10 +31,8 @@ The external code receives as inputs:
 * [`setup.py`](setup.py): Configuration to install the package aiida-seigrowth
 
 ## Installation
- * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following link:
-```
-https://pybamm.readthedocs.io/en/latest/install/install-from-source.html
-```
+ * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following [link](https://pybamm.readthedocs.io/en/latest/install/install-from-source.html):
+
  * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
 ```
 ---
