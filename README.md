@@ -56,8 +56,9 @@ verdi code setup --config code.yml
 ```
 pip install aiida-seigrowth==0.1.0
 reentry scan
-verdi plugin list aiida.calculations  # should now show seigrowth.pbe under the list of aiida.calculations
+verdi plugin list aiida.calculations  
 ```
+The user should now show see *seigrowth.pbe* under *aiida.calculations*
 ## Usage
 
 Here goes a complete example of how to submit a test calculation using this plugin.
