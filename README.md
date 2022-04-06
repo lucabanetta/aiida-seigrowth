@@ -24,16 +24,13 @@ The external code receives as inputs:
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
-* [`.gitignore`](.gitignore): Telling git which files to ignore
-* [`.pre-commit-config.yaml`](.pre-commit-config.yaml): Configuration of [pre-commit hooks](https://pre-commit.com/) that sanitize coding style and check for syntax errors. Enable via `pip install -e .[pre-commit] && pre-commit install`
-* [`.readthedocs.yml`](.readthedocs.yml): Configuration of documentation build for [Read the Docs](https://readthedocs.org/)
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
 * [`conftest.py`](conftest.py): Configuration of fixtures for [pytest](https://docs.pytest.org/en/latest/)
-* [`pyproject.toml`](setup.json): Python package metadata for registration on [PyPI](https://pypi.org/) and the [AiiDA plugin registry](https://aiidateam.github.io/aiida-registry/) (including entry points)
+* [`pyproject.toml`](pyproject.toml): Python package metadata for registration on [PyPI](https://pypi.org/) and the [AiiDA plugin registry](https://aiidateam.github.io/aiida-registry/) (including entry points)
+* [`setup.py`](setup.py): Configuration to install the package aiida-seigrowth
 
 ## Installation
-
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following link:
 ```
 https://pybamm.readthedocs.io/en/latest/install/install-from-source.html
