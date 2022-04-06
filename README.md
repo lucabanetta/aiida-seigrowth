@@ -18,9 +18,6 @@ The external code receives as inputs:
 
 ## Repository contents
 
-* [`.github/`](.github/): [Github Actions](https://github.com/lucabanetta/aiida-seigrowth) configuration
-  * [`ci.yml`](.github/workflows/ci.yml): runs tests, checks test coverage and builds documentation at every new commit
-  * [`publish-on-pypi.yml`](.github/workflows/publish-on-pypi.yml): automatically deploy git tags to PyPI - just generate a [PyPI API token](https://pypi.org/help/#apitoken) for your PyPI account and add it to the `pypi_token` secret of your github repository
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
