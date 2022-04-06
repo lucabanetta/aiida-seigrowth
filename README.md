@@ -10,7 +10,7 @@
 * ['Trajectory.pkl']: trajectory file obtained from p2d simulations conducted by using pybamm;
 * ['Initial SEI Distribution']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters']: it contains the overall number of cycles and the kinetic features of the SEI growth.
-*  
+ 
  It provides with two categories of results
 * ['Distributions']: it contains a series of files filedistr_j_k, which represent the SEI thickness distribution at the j-th location at time k
 * ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
@@ -73,9 +73,9 @@ To submit a calculation:
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
-* Prepare a PyBamm simulation 
+* Prepare a PyBamm simulation by using the script examples/
 
-* Entering the Examples folder in aiida-seigrowth, there is a subfolder named InputData with the input parameters necessary to launch the test and a script named launch.py
+* Entering the Examples folder in aiida-seigrowth, there is a subfolder named InputData with the necessary inputs and a script named launch.py
 s
 * Proceed to launch the example
 ```shell
