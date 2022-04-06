@@ -17,7 +17,9 @@ The external code receives as inputs:
 * ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
 
 ## Repository contents
-
+* [`ExternalCode/`](ExternalCode/): The main source code of the external application
+  * [`pb.py/`](ExternalCode/pb.py): external code to be plugged into Aiida via aiida-seigrowth
+  * [`code.yml/`](ExternalCode/code.yml): configuration code to be used to configure the code into Aiida  
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
