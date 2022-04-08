@@ -60,8 +60,6 @@ verdi plugin list aiida.calculations
 The user should now show see *seigrowth.pbe* under *aiida.calculations*
 ## Usage
 
-Here goes a complete example of how to submit a test calculation using this plugin.
-
 To submit a calculation:
 
 * Activate the pybamm environment 
