@@ -5,21 +5,21 @@
 
 # aiida-seigrowth
 
- A plugin to a python script which describes the growth of the Solid Electrolyte Interface on a graphitic electrode across a series of charges by coupling a Pseudo 2-Dimensional (P2D) model with a Population Balance Model (PBM).
+ A plugin to a python script which describes the growth of the Solid Electrolyte Interface (SEI) on a graphitic electrode across a series of charges by coupling a Pseudo 2-Dimensional (P2D) model with a Population Balance Model (PBM).
  
 The external code receives as inputs:
-* ['Trajectory.pkl']: trajectory file obtained from p2d simulations conducted by using pybamm;
+* ['Trajectory.pkl']: Trajectory file obtained from cahrge simulations conducted by using the P2D Doyle-Fuller-Newman Model;
 * ['Initial SEI Distribution']: an initial SEI thickness distribution for all the considered anodic coordinates;
-* ['Parameters']: it contains the overall number of cycles and the kinetic features of the SEI growth.
+* ['Parameters']: the overall number of cycles and the kinetic parameters related to the SEI growth.
  
  And it provides with two categories of results:
 * ['Distributions']: it contains a series of files filedistr_j_k, which represent the SEI thickness distribution at the j-th location at time k
 * ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
 
 ## Repository contents
-* [`ExternalCode/`](ExternalCode/): The main source code of the external application
+* [`ExternalCode/`](ExternalCode/): The main source code which solves the Population Balance Model
   * [`pb.py`](ExternalCode/pb.py): external code to be plugged into Aiida via aiida-seigrowth
-  * [`code.yml`](ExternalCode/code.yml): configuration code to be used to configure the code into Aiida  
+  * [`code.yml`](ExternalCode/code.yml): to be used to configure the code into the computer Aiida is working at.  
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
