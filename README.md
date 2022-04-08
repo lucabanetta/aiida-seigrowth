@@ -26,7 +26,6 @@ The external code receives as inputs:
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
-* [`conftest.py`](conftest.py): Configuration of fixtures for [pytest](https://docs.pytest.org/en/latest/)
 * [`pyproject.toml`](pyproject.toml): Minimum requirements for the build system to execute
 * [`setup.py`](setup.py): Configuration to install the package aiida-seigrowth
 
