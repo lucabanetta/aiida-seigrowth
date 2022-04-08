@@ -5,21 +5,21 @@
 
 # aiida-seigrowth
 
- A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) DOyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM).
+ A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) Doyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM).
  
 The external code receives as inputs:
-* ['Trajectory.pkl']: Trajectory file obtained from cahrge simulations conducted by using the P2D Doyle-Fuller-Newman Model;
+* ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM;
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
-* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth.
+* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth,
  
- And it provides with two categories of results:
+and provides with two categories of results:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
 * ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location at time k.
 
 ## Repository contents
 * [`ExternalCode/`](ExternalCode/): The main source code which solves the Population Balance Model
   * [`pb.py`](ExternalCode/pb.py): external code to be plugged into Aiida via aiida-seigrowth
-  * [`code.yml`](ExternalCode/code.yml): to be used to configure the code into the computer Aiida is working at.  
+  * [`code.yml`](ExternalCode/code.yml): to be used to configure the code into the computer Aiida is working at. 
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
@@ -72,9 +72,9 @@ cd examples/Pybamm_Simulations
 python Pybamm_Use_Example.py
 ```
 
-* Download the examples folder, there is a subfolder named InputData with the necessary inputs and a script named launch.py
+* Download the examples folder, with a subfolder named InputData with the aforementioned input data and a script named launch.py
 
-* Proceed to run laucnh.py for the first demo:
+* Proceed to run launch.py for the first demo:
 ```
 cd examples
 verdi run launch.py
