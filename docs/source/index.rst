@@ -28,12 +28,4 @@ If you use AiiDA for your research, please cite the following work:
 
 Please contact luca.banetta@polito.it for information concerning ``aiida-seigrowth`` and the `AiiDA mailing list <http://www.aiida.net/mailing-list/>`_ for questions concerning ``aiida``.
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 .. _AiiDA: http://www.aiida.net
