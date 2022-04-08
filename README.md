@@ -73,17 +73,18 @@ cd examples/Pybamm_Simulations
 python Pybamm_Use_Example.py
 ```
 
-* Entering the Examples folder in aiida-seigrowth, there is a subfolder named InputData with the necessary inputs and a script named launch.py
+* Download the examples folder, there is a subfolder named InputData with the necessary inputs and a script named launch.py
 
-* Proceed to launch the example
-```shell
+* Proceed to run laucnh.py for the first demo:
+```
 cd examples
 verdi run launch.py
-verdi process list -a  # check record of calculation
+
 ```
-* Check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
-
-
+* Check the retrieved folder data and save them to a new directory
+  ```
+  verdi process list -a  # check record of calculation
+  verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
 ## License
 
 MIT
