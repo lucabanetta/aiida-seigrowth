@@ -9,12 +9,12 @@
  
 The external code receives as inputs:
 * ['Trajectory.pkl']: Trajectory file obtained from cahrge simulations conducted by using the P2D Doyle-Fuller-Newman Model;
-* ['Initial SEI Distribution']: an initial SEI thickness distribution for all the considered anodic coordinates;
-* ['Parameters']: the overall number of cycles and the kinetic parameters related to the SEI growth.
+* ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
+* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth.
  
  And it provides with two categories of results:
-* ['Distributions']: it contains a series of files filedistr_j_k, which represent the SEI thickness distribution at the j-th location at time k
-* ['Outputs']: it contains a series of files result_pb_k, which represent the average SEI thickness at every anodic location at time k.
+* ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
+* ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location at time k.
 
 ## Repository contents
 * [`ExternalCode/`](ExternalCode/): The main source code which solves the Population Balance Model
