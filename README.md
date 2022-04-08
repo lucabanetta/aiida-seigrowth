@@ -62,11 +62,11 @@ The user should now show see *seigrowth.pbe* under *aiida.calculations*
 
 To submit a calculation:
 
-* Activate the pybamm environment 
+* Activate the PyBAMM environment 
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
-* Prepare a Pybamm simulation
+* Prepare a P2D simulation via PyBAMM
 ```shell
 cd examples/Pybamm_Simulations
 python Pybamm_Use_Example.py
