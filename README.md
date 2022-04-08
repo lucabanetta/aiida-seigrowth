@@ -79,8 +79,9 @@ python Pybamm_Use_Example.py
 cd examples
 verdi run launch.py
 verdi process list -a  # check record of calculation
-check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
 ```
+* check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
+
 
 ## License
 
