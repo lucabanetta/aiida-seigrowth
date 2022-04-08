@@ -8,13 +8,16 @@ The aiida-seigrowth plugin for `AiiDA`_
    :maxdepth: 2
 
    user_guide/index
-   developer_guide/index
-   API documentation <apidoc/aiida_seigrowth>
-   AiiDA Documentation <https://aiida.readthedocs.io>
-
+   user_guide/get_started
+   user_guide/tutorial
+   images/Logo
+	
 If you use this plugin for your research, please cite the following work:
 
-.. highlights:: Author Name1, Author Name2, *Paper title*, Jornal Name XXX, YYYY (Year).
+.. highlights:: Luca Banetta, Graziano Frungieri, Daniele Marchisio,
+   *Aiida-seigrowth: a plugin for the description of
+the growth dynamics of the SEI in Li-ion batteries
+via a P2D-Population Balance Model coupling*, Jornal Name XXX, YYYY (2022).
 
 If you use AiiDA for your research, please cite the following work:
 
