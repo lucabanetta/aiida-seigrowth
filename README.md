@@ -5,7 +5,7 @@
 
 # aiida-seigrowth
 
- A plugin to a python script which describes the growth of the Solid Electrolyte Interface (SEI) on a graphitic electrode across a series of charges by coupling a Pseudo 2-Dimensional (P2D) model with a Population Balance Model (PBM).
+ A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) DOyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM).
  
 The external code receives as inputs:
 * ['Trajectory.pkl']: Trajectory file obtained from cahrge simulations conducted by using the P2D Doyle-Fuller-Newman Model;
@@ -44,7 +44,6 @@ computer: "<yourcomputer>"
 prepend_text: " "
 append_text: " "
 ---
-
 ```
 
  * Include the code:
@@ -63,11 +62,11 @@ The user should now show see *seigrowth.pbe* under *aiida.calculations*
 
 To submit a calculation:
 
-* Activate the PyBAMM environment 
+* Activate the PyBaMM environment 
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
-* Prepare a P2D simulation via PyBAMM
+* Prepare a P2D simulation via PyBaMM
 ```shell
 cd examples/Pybamm_Simulations
 python Pybamm_Use_Example.py
