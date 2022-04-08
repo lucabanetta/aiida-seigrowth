@@ -15,9 +15,7 @@ The aiida-seigrowth plugin for `AiiDA`_
 If you use this plugin for your research, please cite the following work:
 
 .. highlights:: Luca Banetta, Graziano Frungieri, Daniele Marchisio,
-   *Aiida-seigrowth: a plugin for the description of
-the growth dynamics of the SEI in Li-ion batteries
-via a P2D-Population Balance Model coupling*, Jornal Name XXX, YYYY (2022).
+   *Aiida-seigrowth: a plugin for the description of the growth dynamics of the SEI in Li-ion batteries via a P2D-Population Balance Model coupling*, Jornal Name XXX, YYYY (2022).
 
 If you use AiiDA for your research, please cite the following work:
 
