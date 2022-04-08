@@ -2,7 +2,7 @@
 Getting started
 ===============
 
-This page contains a short guide on the installation procedures of the external code and the plugin, together with the necessary information to install PyBAMM. FInally, there is a short example on how to use the plugin.
+This page contains a short guide on the installation procedures of the external code and the plugin, together with the necessary information to install PyBaMM. Finally, there is a short example on how to use the plugin.
 
 Setup the external code *pb.py*
 ++++++++++++++++++++++++
@@ -22,9 +22,9 @@ Setup the external code *pb.py*
             .. code-block:: console 
 	    verdi code setup --config code.yml
 	
-Setup PyBAMM
+Setup PyBaMM
 ++++++++++++++++++++++++
-	- Install PyBAMM in developer mode by following the instructions at `PyBAMM_Install <https://pybamm.readthedocs.io/en/latest/install/install-from-source.html>`_
+	- Install PyBaMM in developer mode by following the instructions at `PyBaMM_Install <https://pybamm.readthedocs.io/en/latest/install/install-from-source.html>`_
 
 Installation
 ++++++++++++
