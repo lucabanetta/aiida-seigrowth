@@ -47,12 +47,12 @@ append_text: " "
 
 ```
 
- * Include the code by using
+ * Include the code:
 ```
 verdi code setup --config code.yml
 ```
 
- * Proceed to install the plugin 
+ * Proceed to install via pip: 
 ```
 pip install aiida-seigrowth==0.1.0
 reentry scan
