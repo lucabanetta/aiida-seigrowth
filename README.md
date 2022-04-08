@@ -80,7 +80,7 @@ cd examples
 verdi run launch.py
 verdi process list -a  # check record of calculation
 ```
-* check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
+* Check the retrieved folder data and save them to a new directory by using verdi node repo dump [NODES] /abs/path/to/new/Folder
 
 
 ## License
