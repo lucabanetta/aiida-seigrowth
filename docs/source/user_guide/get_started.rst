@@ -37,18 +37,18 @@ Quick installation guide for the plugin. Please use the following command lines:
 Usage
 +++++
 1) Activate the PyBaMM environment 
-```
-$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
-```
+	```
+	$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
+	```
 
 2) To submit the demo:
-   * Download examples folder
-   * cd examples
-   * verdi run launch.py  
+	* Download examples folder
+   	* cd examples
+   	* verdi run launch.py  
    
 3) Check the retrieved folder data and save them to a new directory
-    * verdi process list -a  # check record of calculation
-    * verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
+    	* verdi process list -a  # check record of calculation
+    	* verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
 Available calculations
 ++++++++++++++++++++++
 
