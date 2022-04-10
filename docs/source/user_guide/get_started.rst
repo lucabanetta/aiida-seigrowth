@@ -38,7 +38,7 @@ Usage
 +++++
 1) Activate the PyBaMM environment 
 	```
-	$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
+	$ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
 	```
 
 2) To submit the demo:
