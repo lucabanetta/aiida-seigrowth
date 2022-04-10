@@ -70,8 +70,8 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
    * Download the examples folder, with a subfolder named InputData with the aforementioned input data and a script named launch.py
    * 
 2b) To submit a new calculation 
-   * Download Pybamm_Simulations
-   * Execute .py
+   * Download examples/Pybamm_SImulations folder
+   * Execute Pybamm_Simulations_Example.py
    * Save new trajectory.pkl file into InputData
    * Change parameters.txt and InitialSEIDistribution.txt as necessary
    *
