@@ -85,7 +85,7 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
    
 3) Proceed to run launch.py:
 ```
-cd examples/P
+cd examples
 verdi run launch.py
 ```
 4) Check the retrieved folder data and save them to a new directory
