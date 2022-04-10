@@ -24,6 +24,10 @@ and provides with two categories of results:
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
 * [`docs/`](docs/): Initial documentation including a user fuide
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
+  * [`launch.py`](examples/launch.py): python script to launch a process;
+  * [`PyBamm_SImulations`](examples/PyBamm_SImulations): folder with PyBaMM information
+   * [`PyBamm_SImulations`](examples/PyBamm_SImulations/Pybamm_Use_Example.py): script to launch P2D simulation
+  
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
 * [`pyproject.toml`](pyproject.toml): Minimum requirements for the build system to execute
@@ -71,13 +75,16 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
    
 2b) To submit a new calculation 
    * Download examples
-   * Execute Pybamm_Simulations_Example.py
+     ```
+     cd examples/Pybamm_SImulations
+     python3.8 Pybamm_Use_Example.py
+     ```   
    * Save new trajectory.pkl file into InputData
    * Change parameters.txt and InitialSEIDistribution.txt as necessary
-   *
+   
 3) Proceed to run launch.py:
 ```
-cd examples
+cd examples/P
 verdi run launch.py
 ```
 4) Check the retrieved folder data and save them to a new directory
