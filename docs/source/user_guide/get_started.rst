@@ -36,7 +36,6 @@ Quick installation guide for the plugin. Please use the following command lines:
 
 Usage
 +++++
-
 1) Activate the PyBaMM environment 
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
