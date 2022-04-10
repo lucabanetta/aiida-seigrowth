@@ -36,10 +36,30 @@ Quick installation guide for the plugin. Please use the following command lines:
 
 Usage
 +++++
-    1) cd examples
-    2) verdi run launch.py        # submit test calculation
-    3) verdi calculation list -a  # check status of calculation
+1)Activate the PyBaMM environment 
+```
+$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
+```
+2a) To submit the demo:
 
+   * Download examples folder
+   
+2b) To submit a new calculation 
+   * Download examples
+     ```
+     cd examples/Pybamm_SImulations
+     python3.8 Pybamm_Use_Example.py
+     ```   
+   * Save new trajectory.pkl file into InputData
+   * Change parameters.txt and InitialSEIDistribution.txt as necessary
+   
+3) Proceed to run launch.py:
+   *cd examples
+   *verdi run launch.py
+   
+4) Check the retrieved folder data and save them to a new directory
+  * verdi process list -a  # check record of calculation
+  * verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
 Available calculations
 ++++++++++++++++++++++
 
