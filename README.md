@@ -25,8 +25,9 @@ and provides with two categories of results:
 * [`docs/`](docs/): Initial documentation including a user fuide
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
   * [`launch.py`](examples/launch.py): python script to launch a process;
+  * [`InputData`](examples/InputData.py): folder with example input files
   * [`PyBamm_SImulations`](examples/PyBamm_SImulations): folder with PyBaMM information
-   * [`Pybamm_Use_Example.py`](examples/PyBamm_SImulations/Pybamm_Use_Example.py): script to launch P2D simulations
+    * [`Pybamm_Use_Example.py`](examples/PyBamm_SImulations/Pybamm_Use_Example.py): script to launch P2D simulations
   
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
