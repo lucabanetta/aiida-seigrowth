@@ -46,10 +46,10 @@ $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
    
 2b) To submit a new calculation 
    * Download examples
-     ```
+     ``
      cd examples/Pybamm_SImulations
      python3.8 Pybamm_Use_Example.py
-     ```   
+     ``  
    * Save new trajectory.pkl file into InputData
    * Change parameters.txt and InitialSEIDistribution.txt as necessary
    
