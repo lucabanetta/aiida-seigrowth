@@ -32,7 +32,7 @@ and provides with two categories of results:
 ## Installation
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following [link](https://pybamm.readthedocs.io/en/latest/install/install-from-source.html):
 
- * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
+ * Download the ExternalCode folder and setup pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
 ```
 ---
 label: "seigrowthPBM"
@@ -60,30 +60,31 @@ verdi plugin list aiida.calculations
 The user should now show see *seigrowth.pbe* under *aiida.calculations*
 ## Usage
 
-To submit a calculation:
 
-* Activate the PyBaMM environment 
+1)Activate the PyBaMM environment 
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
-* Prepare a P2D simulation via PyBaMM
-```shell
-cd examples/Pybamm_Simulations
-python Pybamm_Use_Example.py
-```
+2a) To submit the demo:
 
-* Download the examples folder, with a subfolder named InputData with the aforementioned input data and a script named launch.py
-
-* Proceed to run launch.py for the first demo:
+   * Download the examples folder, with a subfolder named InputData with the aforementioned input data and a script named launch.py
+   * 
+2b) To submit a new calculation 
+   * Download Pybamm_Simulations
+   * Execute .py
+   * Save new trajectory.pkl file into InputData
+   * Change parameters.txt and InitialSEIDistribution.txt as necessary
+   *
+3) Proceed to run launch.py:
 ```
 cd examples
 verdi run launch.py
-
 ```
-* Check the retrieved folder data and save them to a new directory
+4) Check the retrieved folder data and save them to a new directory
   ```
   verdi process list -a  # check record of calculation
   verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
+```
 ## License
 
 MIT
