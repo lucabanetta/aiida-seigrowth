@@ -40,10 +40,12 @@ Usage
 ```
 $ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
 ```
+
 2) To submit the demo:
    * Download examples folder
    * cd examples
-   * verdi run launch.py   
+   * verdi run launch.py  
+   
 3) Check the retrieved folder data and save them to a new directory
     * verdi process list -a  # check record of calculation
     * verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
