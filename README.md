@@ -15,8 +15,8 @@ The external code receives as inputs:
   | Parameter | Symbol | Unit   
   |---------- | ------ | ---- |
   |   SEI equilibrium overpotential |  Usei  |   V  |
-  |   SEI conductivity | |
-  |   SEI density | |
+  |   SEI conductivity | resist|
+  |   SEI density | $`\rho`$ | kg m$`^{-3}`$
   |   SEI molecular weight |   |
   |   exchange current density |        |
   
