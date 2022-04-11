@@ -31,7 +31,8 @@ The external code receives as inputs:
   |   SEI conductivity               | <img src="https://latex.codecogs.com/svg.image?\sigma_{SEI}" /> |   <img src="https://latex.codecogs.com/svg.image?S&space;\&space;m^{-1}&space;" />       |
   |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />   | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />        |
   |   SEI molecular weight           | <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />     | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />     |
-  |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
+  |   SEI Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
+  |   SEI transfer coefficient  | <img src="https://latex.codecogs.com/svg.image?\alpha" />      |   <img src="https://latex.codecogs.com/svg.image?V" />              |
   |   Faraday constant               | <img src="https://latex.codecogs.com/svg.image?F" />       | <img src="https://latex.codecogs.com/svg.image?C&space;\&space;mol^{-1}&space;" />         |
   |   Constant of perfect gases         | <img src="https://latex.codecogs.com/svg.image?R" />        | <img src="https://latex.codecogs.com/svg.image?J&space;\&space;mol^{-1}&space;\&space;K^{-1}&space;" />|
   |   Number of cycles         | <img src="https://latex.codecogs.com/svg.image?n_{cycles}" />        | - |
