@@ -19,7 +19,7 @@ The external code receives as inputs:
   | :------------------------------: | :----: | :--------------: |
   |  Electrode surface potential  | <img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   <img src="https://latex.codecogs.com/svg.image?V" />              |
   |  Electrolyte potential               | <img src="https://latex.codecogs.com/svg.image?\phi_e" /> |   <img src="https://latex.codecogs.com/svg.image?V" />        |
-  |  Intercalating current density |  <img src="https://latex.codecogs.com/svg.image?i_{tot}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;m^{-2}&space;" />
+  |  Intercalating current density |  <img src="https://latex.codecogs.com/svg.image?i_{tot}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />
   
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
