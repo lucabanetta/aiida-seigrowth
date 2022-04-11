@@ -26,11 +26,11 @@ The external code receives as inputs:
 
   | Parameter                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
-  |   SEI equilibrium overpotential  | <img src="https://latex.codecogs.com/svg.image?U_{SEI}" />   |   V              |
+  |   SEI equilibrium overpotential  | <img src="https://latex.codecogs.com/svg.image?U_{SEI}" />      |   V              |
   |   SEI conductivity               | <img src="https://latex.codecogs.com/svg.image?\sigma_{SEI}" /> |   S m^{-1}       |
-  |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />    | kg m^{-3}        |
-  |   SEI molecular weight           |  <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />      | kg kmol^{-1}     |
-  |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />     | A m^{-2}         |
+  |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />   | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />        |
+  |   SEI molecular weight           | <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />     | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />     |
+  |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
   |   Faraday constant               | F      | C m^{-1}         |
   |   Constant perfect gases         | R      | J mol^{-1} K^{-1}|
   
