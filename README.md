@@ -105,8 +105,8 @@ $ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
      cd examples/Pybamm_SImulations
      python3.8 Pybamm_Use_Example.py
      ```   
-   * Save new trajectory.pkl file into InputData
-   * Change parameters.txt and InitialSEIDistribution.txt as necessary
+   * Save new .pkl file into InputData
+   * Modify/Replace parameters.txt and InitialSEIDistribution.txt as necessary
    
 3) Modify launch.py by indicating the code and the computer is linked to
    ```
