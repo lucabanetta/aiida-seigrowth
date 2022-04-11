@@ -5,7 +5,7 @@
 
 # aiida-seigrowth
 
- A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) Doyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM). The thicknesses are updated adopting
+ A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) Doyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM). The possible SEI thicknesses for each anodic coordinate are updated by:
  
 <img src="https://latex.codecogs.com/svg.image?\frac{\mathrm{d}&space;\delta}{\mathrm{d}&space;t}&space;=&space;\frac{J_{SEI}&space;\&space;MW_{SEI}}{\rho_{SEI}}" />,
 
