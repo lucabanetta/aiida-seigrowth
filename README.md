@@ -27,7 +27,7 @@ The external code receives as inputs:
   | Parameter                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
   |   SEI equilibrium overpotential  | <img src="https://latex.codecogs.com/svg.image?U_{SEI}" />   |   V              |
-  |   SEI conductivity               | resist |   S m^{-1}       |
+  |   SEI conductivity               | <img src="https://latex.codecogs.com/svg.image?\sigma_{SEI}" /> |   S m^{-1}       |
   |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />    | kg m^{-3}        |
   |   SEI molecular weight           | MW     | kg kmol^{-1}     |
   |   Exchange current density       | i0     | A m^{-2}         |
