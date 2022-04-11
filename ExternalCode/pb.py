@@ -29,8 +29,7 @@ with open("parameters.txt") as inputParameters:
             
 ################### Assign input parameters from dictionary ########################################
 Usei    = parameters['Usei']
-resist  = parameters['resist']
-ksei    = parameters['ksei']
+sigma_sei  = parameters['sigma_sei']
 MW      = parameters['MW']
 rho     = parameters['rho'] 
 ##################### Constants ################################################################
@@ -45,6 +44,7 @@ nclass = -1 # remove the title from the evaluation of nclass
 
 os.mkdir("Distributions")
 os.mkdir("Outputs")
+
 for ilayer in range(nlayer):
     with open('InitialSEIDistribution.txt','r') as firstfile, open('Distributions/fildistr'+str(ilayer)+'_0.dat','w') as secondfile:
         for line in firstfile:
@@ -87,7 +87,7 @@ for a in range(1, ncycles):
 			SEI_thickness[iclasse]=floats[0]
 			thickness_number_fraction[iclasse]=floats[1]
 		################## define overpotential for each class for every time #################################
-			overpot[iclasse,:] = neg_electrode_pot[ilayer,:]-neg_electrolyte_pot[ilayer,:]- parameters['Usei'] -(inter_curr_dens[ilayer,:]*SEI_thickness[iclasse]/parameters['resist'])
+			overpot[iclasse,:] = neg_electrode_pot[ilayer,:]-neg_electrolyte_pot[ilayer,:]- parameters['Usei'] -(inter_curr_dens[ilayer,:]*SEI_thickness[iclasse]/parameters['sigma_sei'])
 		varname='layer'+str(ilayer)
 		my_dict_x[varname] = SEI_thickness
 		my_dict_y[varname] = thickness_number_fraction
@@ -143,7 +143,7 @@ for a in range(1, ncycles):
 	 ####### define the rhs for each SEI thickness (iclasse) at every coordinate x[m] #######################################
 		nfuncs = []
 		for iclasse in range(0,int(nclass)):
-			Jsei=- parameters['i0'] / parameters['F'] * np.exp(- parameters['F'] * eta_sei_single[ilayer,iclasse,:] * parameters['alpha'] / parameters['R']/parameters['T'])
+			Jsei= - parameters['i0'] / parameters['F'] * np.exp(- parameters['F'] * eta_sei_single[ilayer,iclasse,:] * parameters['alpha'] / parameters['R']/parameters['T'])
 			G=-Jsei*parameters['MW']/parameters['rho']  #growth for each layer and each particle size as a function of time
 			nfunc = scipy.interpolate.interp1d(time,G,bounds_error=False, fill_value="extrapolate")
 			nfuncs.append(nfunc) 
