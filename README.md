@@ -32,7 +32,7 @@ The external code receives as inputs:
   |   SEI molecular weight           | <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />     | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />     |
   |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
   |   Faraday constant               | <img src="https://latex.codecogs.com/svg.image?F" />       | <img src="https://latex.codecogs.com/svg.image?C&space;\&space;mol^{-1}&space;" />         |
-  |   Constant perfect gases         | <img src="https://latex.codecogs.com/svg.image?R" />       | <img src="https://latex.codecogs.com/svg.image?J&space;\&space;mol^{-1}&space;\&space;K^{-1}&space;" />|
+  |   Constant perfect gases         | <img src="https://latex.codecogs.com/svg.image?R" />        | <img src="https://latex.codecogs.com/svg.image?J&space;\&space;mol^{-1}&space;\&space;K^{-1}&space;" />|
   
 and| provides with two categories of results:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
