@@ -38,8 +38,8 @@ The external code receives as inputs:
   |   Number of cycles         | <img src="https://latex.codecogs.com/svg.image?n_{cycles}" />        | - |
   
 and| provides with two categories of results:
-* ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
-* ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location at time k.
+* ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location after k cycles;
+* ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location after k cycles.
 
 ## Repository contents
 * [`ExternalCode/`](ExternalCode/): The main source code which solves the Population Balance Model
