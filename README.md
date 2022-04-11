@@ -93,7 +93,7 @@ The user should now show see *seigrowth.pbe* under *aiida.calculations*
 
 1)Activate the PyBaMM environment 
 ```
-$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
+$ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
 ```
 2a) To submit the demo:
 
