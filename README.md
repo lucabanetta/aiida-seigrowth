@@ -22,7 +22,7 @@ The plugin is featured by three inputs:
   |  Electrolyte potential               | <img src="https://latex.codecogs.com/svg.image?\phi_e" /> |   <img src="https://latex.codecogs.com/svg.image?V" />        |
   |  Intercalating current density |  <img src="https://latex.codecogs.com/svg.image?i_{tot}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />
   
-* ['InitialSeiDistribution]: an initial SEI thickness distribution for all the considered <img src="https://latex.codecogs.com/svg.image?x_n" />;
+* ['InitialSeiDistribution']: an initial SEI thickness distribution for all the considered <img src="https://latex.codecogs.com/svg.image?x_n" />;
 * ['parameters']: the overall number of cycles and the kinetic parameters related to the SEI growth:
 
   | Parameter                        | Symbol | Unit   
