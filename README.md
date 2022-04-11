@@ -18,12 +18,7 @@ The external code receives as inputs:
   | Variable                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
   |  Electrode surface potential  | < img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   V              |
-  |   SEI conductivity               | resist |   S m^{-1}       |
-  |   SEI density                    | rho    | kg m^{-3}        |
-  |   SEI molecular weight           | MW     | kg kmol^{-1}     |
-  |   Exchange current density       | i0     | A m^{-2}         |
-  |   Faraday constant               | F      | C m^{-1}         |
-  |   Constant perfect gases         | R      | J mol^{-1} K^{-1}|
+  |  Electrolyte potential               | resist |   S m^{-1}       |
   
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
