@@ -13,8 +13,8 @@ where the flux of Lithium ions undergoing the growth of SEI <img src="https://la
 
 <img src="https://latex.codecogs.com/svg.image?J_{SEI}&space;=&space;i_0&space;\exp{\left&space;(&space;\frac{\alpha&space;F&space;(\phi_s&space;-&space;\phi_e&space;-&space;U_{SEI}&space;-&space;i_{tot}\delta&space;/\sigma_{SEI})}{R&space;T}&space;\right&space;)}" />
 
-The external code receives as inputs:
-* ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM. It contains the following electrochemical dynamics information across the anodic coordinate:
+The plugin is featured by three inputs:
+* ['PybammData']: a singleFileData in pickle format (.pkl) obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM. It contains the following electrochemical dynamics information across the anodic coordinate:
   | Variable                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
   |  Anodic coordinates  | <img src="https://latex.codecogs.com/svg.image?x_n" />   |   <img src="https://latex.codecogs.com/svg.image?m" />              |
@@ -22,8 +22,8 @@ The external code receives as inputs:
   |  Electrolyte potential               | <img src="https://latex.codecogs.com/svg.image?\phi_e" /> |   <img src="https://latex.codecogs.com/svg.image?V" />        |
   |  Intercalating current density |  <img src="https://latex.codecogs.com/svg.image?i_{tot}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />
   
-* ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered <img src="https://latex.codecogs.com/svg.image?x_n" />;
-* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
+* ['InitialSeiDistribution]: an initial SEI thickness distribution for all the considered <img src="https://latex.codecogs.com/svg.image?x_n" />;
+* ['parameters']: the overall number of cycles and the kinetic parameters related to the SEI growth:
 
   | Parameter                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
