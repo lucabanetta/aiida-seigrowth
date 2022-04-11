@@ -17,7 +17,7 @@ The external code receives as inputs:
 * ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM. It contains the following information:
   | Variable                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
-  |  Electrode surface potential  | < img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   V              |
+  |  Electrode surface potential  | <img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   V              |
   |  Electrolyte potential               | resist |   S m^{-1}       |
   
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
