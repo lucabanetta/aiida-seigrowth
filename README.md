@@ -108,12 +108,14 @@ $ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
    * Save new trajectory.pkl file into InputData
    * Change parameters.txt and InitialSEIDistribution.txt as necessary
    
-3) Proceed to run launch.py:
+3) Modify launch.py by indicating the code and the computer is linked to
+
+4) Proceed to run launch.py:
 ```
 cd examples
 verdi run launch.py
 ```
-4) Check the retrieved folder data and save them to a new directory
+5) Check the retrieved folder data and save them to a new directory
   ```
   verdi process list -a  # check record of calculation
   verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
