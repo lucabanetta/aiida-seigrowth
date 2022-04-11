@@ -1,0 +1,10 @@
+Usei   = 0.4   
+sigma_sei = 2e-6  
+MW_sei     = 0.162 
+rho_sei    = 1690  
+F      = 96475 
+alpha  = 0.5   
+R      = 8.314 
+T      = 298   
+i0     = 2e-8  
+ncycles = 200 
