@@ -5,12 +5,12 @@ from aiida.common.exceptions import NotExistent
 import os
 
 # Setting up inputs
-computer = orm.load_computer('localhost')
-code = load_code('seigrowthPBM@localhost')
+computer = orm.load_computer('testpbe')
+code = load_code('seigrowthPBM@testpbe')
 path = os.getcwd()
 builder = code.get_builder()
-builder.parameters = orm.SinglefileData(file = path + '/InputData/parameters.dat') 
-builder.InitialSeiDistribution = orm.SinglefileData(file= path + '/InputData/InitialSEIDistribution.dat')
+builder.parameters = orm.SinglefileData(file = path + '/InputData/parameters.txt') 
+builder.InitialSeiDistribution = orm.SinglefileData(file= path + '/InputData/InitialSEIDistribution.txt')
 builder.PybammData = orm.SinglefileData(file= path +'/InputData/Trajectory.pkl')
 
 builder.metadata.options.withmpi = False
