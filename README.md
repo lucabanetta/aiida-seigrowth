@@ -12,13 +12,14 @@ The external code receives as inputs:
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
 
-  | Parameter | Symbol | Unit   
-  |---------- | ------ | ---- |
-  |   SEI equilibrium overpotential |  Usei  |   V  |
-  |   SEI conductivity | resist|
-  |   SEI density | $`\rho`$ | kg m$`^{-3}`$
-  |   SEI molecular weight |   |
-  |   exchange current density |        |
+  | Parameter                        | Symbol | Unit   
+  | :------------------------------: | :----: | :--: |
+  |   SEI equilibrium overpotential  | Usei   |   V          |
+  |   SEI conductivity               | resist |   S m^{-1}   |
+  |   SEI density                    | rho    | kg m^{-3}    |
+  |   SEI molecular weight           | MW     | kg kmol^{-1} |
+  |   exchange current density       | i0     | A m^{-2}     |
+  |   Faraday constant               | F      | C m^{-1}     |
   
 and| provides with two categories of results:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
