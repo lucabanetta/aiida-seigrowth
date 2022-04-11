@@ -14,7 +14,17 @@ where the flux of Lithium ions undergoing the growth of SEI <img src="https://la
 <img src="https://latex.codecogs.com/svg.image?J_{SEI}&space;=&space;i_0&space;\exp{\left&space;(&space;\frac{\alpha&space;F&space;(\phi_s&space;-&space;\phi_e&space;-&space;U_{SEI}&space;-&space;i_{tot}\delta&space;/\sigma_{SEI})}{R&space;T}&space;\right&space;)}" />
 
 The external code receives as inputs:
-* ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM;
+* ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM. It contains the following information:
+  | Variable                        | Symbol | Unit   
+  | :------------------------------: | :----: | :--------------: |
+  |  Electrode surface potential  | < img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   V              |
+  |   SEI conductivity               | resist |   S m^{-1}       |
+  |   SEI density                    | rho    | kg m^{-3}        |
+  |   SEI molecular weight           | MW     | kg kmol^{-1}     |
+  |   Exchange current density       | i0     | A m^{-2}         |
+  |   Faraday constant               | F      | C m^{-1}         |
+  |   Constant perfect gases         | R      | J mol^{-1} K^{-1}|
+  
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
 
