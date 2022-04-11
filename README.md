@@ -10,9 +10,17 @@
 The external code receives as inputs:
 * ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM;
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
-* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth,
- 
-and provides with two categories of results:
+* ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
+
+  | Parameter | Symbol | Unit   
+  |---------- | ------ | ---- |
+  |   SEI equilibrium overpotential |  Usei  |   V  |
+  |   SEI conductivity | |
+  |   SEI density | |
+  |   SEI molecular weight |   |
+  |   exchange current density |        |
+  
+and| provides with two categories of results:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location at time k
 * ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location at time k.
 
