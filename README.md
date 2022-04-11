@@ -18,7 +18,7 @@ The external code receives as inputs:
   | Variable                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
   |  Electrode surface potential  | <img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   V              |
-  |  Electrolyte potential               | resist |   S m^{-1}       |
+  |  Electrolyte potential               | <img src="https://latex.codecogs.com/svg.image?\phi_e" /> |   S m^{-1}       |
   
 * ['Initial SEI Distribution.txt']: an initial SEI thickness distribution for all the considered anodic coordinates;
 * ['Parameters.txt']: the overall number of cycles and the kinetic parameters related to the SEI growth:
