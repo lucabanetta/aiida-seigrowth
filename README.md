@@ -32,7 +32,7 @@ The external code receives as inputs:
   |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />   | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />        |
   |   SEI molecular weight           | <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />     | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />     |
   |   SEI Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
-  |   SEI transfer coefficient  | <img src="https://latex.codecogs.com/svg.image?\alpha" />      |   <img src="https://latex.codecogs.com/svg.image?V" />              |
+  |   SEI transfer coefficient  | <img src="https://latex.codecogs.com/svg.image?\alpha" />      |   -      |
   |   Faraday constant               | <img src="https://latex.codecogs.com/svg.image?F" />       | <img src="https://latex.codecogs.com/svg.image?C&space;\&space;mol^{-1}&space;" />         |
   |   Constant of perfect gases         | <img src="https://latex.codecogs.com/svg.image?R" />        | <img src="https://latex.codecogs.com/svg.image?J&space;\&space;mol^{-1}&space;\&space;K^{-1}&space;" />|
   |   Number of cycles         | <img src="https://latex.codecogs.com/svg.image?n_{cycles}" />        | - |
