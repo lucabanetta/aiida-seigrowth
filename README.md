@@ -109,7 +109,11 @@ $ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
    * Change parameters.txt and InitialSEIDistribution.txt as necessary
    
 3) Modify launch.py by indicating the code and the computer is linked to
-
+   ```
+   computer = orm.load_computer('yourcomputer')
+   code = load_code('seigrowthPBM@yourcomputer')
+   ```
+  
 4) Proceed to run launch.py:
 ```
 cd examples
