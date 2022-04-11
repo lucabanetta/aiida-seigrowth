@@ -30,7 +30,7 @@ The external code receives as inputs:
   |   SEI conductivity               | <img src="https://latex.codecogs.com/svg.image?\sigma_{SEI}" /> |   S m^{-1}       |
   |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />    | kg m^{-3}        |
   |   SEI molecular weight           |  <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />      | kg kmol^{-1}     |
-  |   Exchange current density       | i0     | A m^{-2}         |
+  |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />     | A m^{-2}         |
   |   Faraday constant               | F      | C m^{-1}         |
   |   Constant perfect gases         | R      | J mol^{-1} K^{-1}|
   
