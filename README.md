@@ -17,6 +17,7 @@ The external code receives as inputs:
 * ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM. It contains the following electrochemical dynamics information across the anodic coordinate:
   | Variable                        | Symbol | Unit   
   | :------------------------------: | :----: | :--------------: |
+  |  Anodic coordinates  | <img src="https://latex.codecogs.com/svg.image?x_n" />   |   <img src="https://latex.codecogs.com/svg.image?m" />              |
   |  Electrode surface potential  | <img src="https://latex.codecogs.com/svg.image?\phi_s" />   |   <img src="https://latex.codecogs.com/svg.image?V" />              |
   |  Electrolyte potential               | <img src="https://latex.codecogs.com/svg.image?\phi_e" /> |   <img src="https://latex.codecogs.com/svg.image?V" />        |
   |  Intercalating current density |  <img src="https://latex.codecogs.com/svg.image?i_{tot}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />
