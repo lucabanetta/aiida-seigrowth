@@ -31,7 +31,7 @@ The external code receives as inputs:
   |   SEI density                    | <img src="https://latex.codecogs.com/svg.image?\rho_{SEI}" />   | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />        |
   |   SEI molecular weight           | <img src="https://latex.codecogs.com/svg.image?MW_{SEI}" />     | <img src="https://latex.codecogs.com/svg.image?kg&space;\&space;m^{-3}&space;" />     |
   |   Exchange current density       | <img src="https://latex.codecogs.com/svg.image?i_{0}" />        | <img src="https://latex.codecogs.com/svg.image?A&space;\&space;m^{-2}&space;" />         |
-  |   Faraday constant               | F      | C m^{-1}         |
+  |   Faraday constant               | F      | <img src="https://latex.codecogs.com/svg.image?C&space;\&space;mol^{-1}&space;" />         |
   |   Constant perfect gases         | R      | J mol^{-1} K^{-1}|
   
 and| provides with two categories of results:
