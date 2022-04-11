@@ -5,9 +5,11 @@
 
 # aiida-seigrowth
 
- A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) Doyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM).
+ A plugin to an external code which models the growth of the Solid Electrolyte Interface (SEI) across a graphitic anode over a series of charge cycles by coupling a Pseudo 2-Dimensional (P2D) Doyle-Fuller-Newman Li-ion battery modemodel with a Population Balance Model (PBM). The thicknesses are updated adopting
  
-<img src="https://latex.codecogs.com/svg.image?\frac{\mathrm{d}&space;\delta}{\mathrm{d}&space;t}&space;=&space;\frac{J_{SEI}&space;\&space;MW_{SEI}}{\rho_{SEI}}" />
+<img src="https://latex.codecogs.com/svg.image?\frac{\mathrm{d}&space;\delta}{\mathrm{d}&space;t}&space;=&space;\frac{J_{SEI}&space;\&space;MW_{SEI}}{\rho_{SEI}}" />,
+
+where <img src="https://latex.codecogs.com/svg.image?J_{SEI}" /> is modeled according to a reaction controlled mechanism:
 
 The external code receives as inputs:
 * ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM;
