@@ -37,7 +37,7 @@ The plugin is featured by three inputs:
   |   Constant of perfect gases         | <img src="https://latex.codecogs.com/svg.image?R" />        | <img src="https://latex.codecogs.com/svg.image?J&space;\&space;mol^{-1}&space;\&space;K^{-1}&space;" />|
   |   Number of cycles         | <img src="https://latex.codecogs.com/svg.image?n_{cycles}" />        | - |
   
-and| provides with two categories of results:
+and| provides with two categories of results, which will be stored in a remoteFolder node:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location after k cycles;
 * ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location after k cycles.
 
