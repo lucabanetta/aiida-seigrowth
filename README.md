@@ -9,7 +9,9 @@
  
 <img src="https://latex.codecogs.com/svg.image?\frac{\mathrm{d}&space;\delta}{\mathrm{d}&space;t}&space;=&space;\frac{J_{SEI}&space;\&space;MW_{SEI}}{\rho_{SEI}}" />,
 
-where <img src="https://latex.codecogs.com/svg.image?J_{SEI}" /> is modeled according to a reaction controlled mechanism:
+where the flux of Lithium ions undergoing the growth of SEI <img src="https://latex.codecogs.com/svg.image?J_{SEI}" /> is modeled according to a reaction controlled mechanism:
+
+<img src="https://latex.codecogs.com/svg.image?J_{SEI}&space;=&space;i_0&space;\exp{\left&space;(&space;\frac{\alpha&space;F&space;(\phi_s&space;-&space;\phi_e&space;-&space;U_{SEI}&space;-&space;i_{tot}\delta&space;/\sigma_{SEI})}{R&space;T}&space;\right&space;)}">
 
 The external code receives as inputs:
 * ['Trajectory.pkl']: pickle format file obtained from Li-ion battery charge simulations by using the P2D Doyle-Fuller-Newman Model implemented in the open source python library PyBaMM;
