@@ -128,9 +128,6 @@ verdi run launch.py
   verdi process list -a  # check record of calculation
   verdi node repo dump [RemoteDataFolderNode] /abs/path/to/new/Folder
 ```
-## License
-
-MIT
 ## Contact
 
 luca.banetta@polito.it
