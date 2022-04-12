@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Banetta"
+  given-names: "Luca"
+- family-names: "Frungieri"
+  given-names: "Graziano"
+- family-names: "Buffo"
+  given-names: "Antonio"
+- family-names: "Boccardo"
+  given-names: "Gianluca
+- family-names: "Marchisio"
+  given-names: "Daniele Luca"
+- family-names: "Vanni"
+  given-names: "Marco"
+title: "aiida-seigrowth"
+version: 0.1.0
+doi: 10.5281/zenodo.6452406 
+date-released: 2022-04-12
+url: "https://doi.org/10.5281/zenodo.6452406"
