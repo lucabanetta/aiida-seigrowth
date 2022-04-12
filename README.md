@@ -40,7 +40,14 @@ The plugin is featured by three inputs:
 and| provides with two categories of results, which will be stored in a remoteFolder node:
 * ['Distributions']: a series of filedistr_j_k.dat text files, which represent the SEI thickness distribution at the j-th location after k cycles;
 * ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location after k cycles.
+If you use this plugin for your research, please cite the following work:
 
+.. highlights:: Luca Banetta, Graziano Frungieri, Antonio Buffo, Marco Vanni, Daniele Marchisio,
+   *Aiida-seigrowth: a plugin for the description of the growth dynamics of the SEI in Li-ion batteries via a P2D-Population Balance Model coupling*, 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6452406.svg)](https://doi.org/10.5281/zenodo.6452406)
+
+(2022).
+   
 ## Repository contents
 * [`ExternalCode/`](ExternalCode/): The main source code which solves the Population Balance Model
   * [`pb.py`](ExternalCode/pb.py): external code to be plugged into Aiida via aiida-seigrowth
