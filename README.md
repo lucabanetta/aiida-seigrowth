@@ -42,6 +42,7 @@ and| provides with two categories of results, which will be stored in a remoteFo
 * ['Outputs']:  a series of files result_pb_k text files, which represent the average SEI thickness at every anodic location after k cycles.
 
 If you use this plugin for your research, please cite the following work:
+
 Luca Banetta, Graziano Frungieri, Antonio Buffo, Marco Vanni, Daniele Marchisio, *Aiida-seigrowth: a plugin for the description of the growth dynamics of the SEI in Li-ion batteries via a P2D-Population Balance Model coupling*, DOI:10.5281/zenodo.2842910 (2022).
    
 ## Repository contents
