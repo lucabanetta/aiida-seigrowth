@@ -91,7 +91,7 @@ MIT
 
 luca.banetta@polito.it
 
-# Acknowledgements
+## Acknowledgements
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957189.
 
 [ci-badge]: https://github.com/lucabanetta/aiida-seigrowth/workflows/ci/badge.svg?branch=master
