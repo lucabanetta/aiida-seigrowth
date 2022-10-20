@@ -92,7 +92,7 @@ MIT
 luca.banetta@polito.it
 
 ## Acknowledgements
-This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957189.
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 957189. The project is part of BATTERY 2030+, the large-scale European research initiative for inventing the sustainable batteries of the future.
 
 [ci-badge]: https://github.com/lucabanetta/aiida-seigrowth/workflows/ci/badge.svg?branch=master
 [ci-link]: https://github.com/lucabanetta/aiida-seigrowth/actions
