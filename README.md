@@ -22,7 +22,7 @@ and provides with two categories of results:
   * [`code.yml`](ExternalCode/code.yml): to be used to configure the code into the computer Aiida is working at. 
 * [`aiida_seigrowth/`](aiida_seigrowth/): The main source code of the plugin package
   * [`calculations.py`](aiida_seigrowth/calculations.py): A new `PbeSeiCalculation` `CalcJob` class
-* [`docs/`](docs/): Initial documentation including a user fuide
+* [`docs/`](docs/): Initial documentation including a user guide
 * [`examples/`](examples/): An example of how to submit a calculation using this plugin
 * [`LICENSE`](LICENSE): License for your plugin
 * [`README.md`](README.md): This file
