@@ -64,7 +64,7 @@ To submit a calculation:
 
 * Activate the PyBaMM environment 
 ```
-$ source /absoulte/path/to/PyBaMM/.tox/dev/bin/activate
+$ source /absolute/path/to/PyBaMM/.tox/dev/bin/activate
 ```
 * Prepare a P2D simulation via PyBaMM
 ```shell
