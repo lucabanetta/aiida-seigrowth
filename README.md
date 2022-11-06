@@ -32,7 +32,7 @@ and provides with two categories of results:
 ## Installation
  * Before proceeding with the installation make sure that you have the right version of Pybamm installed correctly using the developer version following the istructions at the following [link](https://pybamm.readthedocs.io/en/latest/install/install-from-source.html):
 
- * Download the External Code folder and include the python script pb.py by modifying the script code.yml by inserting the absolute path to the script pb.py:
+ * Download the External Code folder and modify the script code.yml by inserting the absolute path to the script pb.py:
 ```
 ---
 label: "seigrowthPBM"
@@ -57,7 +57,7 @@ pip install aiida-seigrowth==0.1.0
 reentry scan
 verdi plugin list aiida.calculations  
 ```
-The user should now show see *seigrowth.pbe* under *aiida.calculations*
+The user should now see *seigrowth.pbe* under *aiida.calculations*
 ## Usage
 
 To submit a calculation:
